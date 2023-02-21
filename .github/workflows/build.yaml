@@ -32,7 +32,7 @@ jobs:
     - name: go test
       run: go test -v ./...
     - name: build paw
-      run: go build -o paw -v .
+      run: go build -o paw -v ./cmd/paw
     - name: Upload lord binary
       uses: actions/upload-artifact@v3
       with:
